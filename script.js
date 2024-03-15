@@ -1,4 +1,3 @@
-// Add JavaScript here
 document.addEventListener('click', function (event) {
   const firework = document.createElement('div');
   firework.className = 'firework';
