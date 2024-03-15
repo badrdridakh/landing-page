@@ -1,0 +1,201 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(139, 10, 10);
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: rgb(139, 10, 10);
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.social-links img {
+  width: 50px;
+  height: auto;
+}
+
+.ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.ul li a,
+footer a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(224, 47, 47, 0.1);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.05);
+}
+
+.gallery,
+.pictures-G {
+  text-align: center;
+}
+
+.pictures-G {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.pictures-G img {
+  max-width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.pictures-G img:hover {
+  transform: scale(2.6);
+}
+
+
+.title {
+  display: inline-block;
+  text-align: center;
+  margin-top: 0;
+}
+
+.formation {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.course {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.course h3 {
+  margin-top: 0;
+}
+
+.intro {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.intro:hover {
+  transform: translateY(-5px);
+}
+
+.intro:hover::after {
+  content: '\1F60A';
+  display: inline-block;
+  font-size: 24px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: colorfulEmoticon 3s linear infinite;
+}
+
+@keyframes colorfulEmoticon {
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: blue;
+  }
+
+  50% {
+    color: green;
+  }
+
+  75% {
+    color: orange;
+  }
+
+  100% {
+    color: purple;
+  }
+}
+
+
+
+
+
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+.firework {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: explode 0.5s linear;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(20);
+    opacity: 0;
+  }
+}
+
+</style>
